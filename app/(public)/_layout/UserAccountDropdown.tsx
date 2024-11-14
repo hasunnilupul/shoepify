@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Icon from "@/components/Icon";
+import Link from "next/link";
 
 const UserAccountDropdown = () => {
   return (
@@ -27,11 +28,15 @@ const UserAccountDropdown = () => {
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            Login
+          <DropdownMenuItem asChild>
+            <Link href="/login">
+              Login
+            </Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            Register
+          <DropdownMenuItem asChild>
+            <Link href="/#">
+              Register
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
