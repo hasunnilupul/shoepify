@@ -1,5 +1,3 @@
-"use client";
-
 import TopNavbar from "./TopNavbar";
 
 export default function Header() {
